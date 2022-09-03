@@ -1,0 +1,24 @@
+/* pages/welocome/welcome.wxss */
+.avtor-image{
+    height: 200rpx;width: 200rpx;border-radius: 50%;
+    /* margin-top: 160rpx; */
+}
+.container{
+    display: flex;
+    align-items: center;
+    background-color: #b3d4db;
+    height: 100hx;
+}
+.my-button{
+    margin-top: 180rpx;
+    font-size: 32rpx;
+    border: 1px gray solid;
+    padding: 15rpx 20rpx;
+    border-radius: 5%;
+    font-weight: bold;
+}
+.motto{
+    margin-top: 80rpx;
+    margin-bottom: 20rpx;
+    font-weight: bold;
+}
