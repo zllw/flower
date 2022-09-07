@@ -1,1 +1,42 @@
 /* pages/index/index.wxss */
+/* .c-swiper{
+    width: 100vw;
+} */
+.c-swiper-item-img{
+    width: 100vw;
+    height: 420rpx;
+}
+.article-avator{
+    border-radius: 50%;
+    height: 100rpx;
+    width:100rpx;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+    /* vertical-align: middle; */
+}
+.article-avator-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.article-date{
+    height: 50rpx;
+    line-height: 50rpx;
+    margin-left: 10rpx;
+}
+.article-img{
+    height: 400rpx;
+    width:100vw;
+}
+.article-icon{
+    width: 50rpx;
+    height: 50rpx;
+}
+.article{
+    display: flex;
+    flex-direction:column;
+    margin-top: 20rpx;
+    margin-bottom: 40rpx;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}

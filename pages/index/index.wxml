@@ -1,2 +1,23 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view>
+    <swiper class="c-swiper-item-img" indicator-dots="{{true}}" autoplay="{{true}}" indicator-active-color="#C22A1E" vertical="{{false}}" duration="400" interval="1000">
+        <swiper-item wx:for="{{3}}">
+            <image class="c-swiper-item-img" src="/images/avtor.png"></image>
+        </swiper-item>
+    </swiper>
+    <view class="article">
+        <view class="article-avator-date">
+            <image class="article-avator" src="/images/avtor.png"></image>
+            <text class="article-date">2022-09-07 22:00</text>
+        </view>
+        <text class="article-tittle">关于宇宙无极射线到月球的事件</text>
+        <image class="article-img" src="/images/avtor.png"></image>
+        <text class="article-content">你好微积分大框架的科技阿福卡仕达晶方科技奥德赛科技风科技的快速晶方科技奥德赛风刀霜剑咖啡机跨境电商咖啡机卡加斯咖啡机看电视剧反馈几十块的方法是打发的撒开发金卡戴珊积分卡世纪东方</text>
+        <view>
+            <image class="article-icon" src="/images/点赞.png" />
+            <text>563</text>
+            <image class="article-icon" src="/images/收藏.png" />
+            <text>165</text>
+        </view>
+    </view>
+</view>

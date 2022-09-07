@@ -1,7 +1,10 @@
+
 <view class="container">
-    <image class="avtor-image" src="/images/avtor.png"></image>
+    <l-avatar  src="/images/avtor.png" shape="square" text="liwei" placement="bottom" size="200"></l-avatar>
+    <!-- <image class="avtor-image" src="/images/avtor.png"></image> -->
     <text class="motto">hello liwei</text>
     <view class="my-button">
     <text>开启小程序之旅</text>
     </view>
+    
 </view>
