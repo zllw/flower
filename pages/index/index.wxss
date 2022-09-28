@@ -35,8 +35,32 @@
 .article{
     display: flex;
     flex-direction:column;
-    margin-top: 20rpx;
-    margin-bottom: 40rpx;
+    margin-top: 10rpx;
+    margin-bottom: 30rpx;
     border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
+}
+.dianzan{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    font-size: 26rpx;
+}
+.pad{
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    margin-left: 20rpx;
+}
+.article-content{
+    margin-left: 10rpx;
+    font-size: 26rpx;
+}
+.txt{
+   width: 730rpx;
+}
+.article-tittle{
+    margin-left: 10rpx;
+    font-weight: 800;
+    color: black;
+    font-size: 35rpx;
 }

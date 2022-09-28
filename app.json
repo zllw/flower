@@ -10,5 +10,21 @@
         "navigationBarBackgroundColor": "#C22A1E"
     },
     "style": "v2",
-    "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text":"首页",
+                "iconPath":"/images/home1.png",
+                "selectedIconPath": "/images/home1_s.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text":"我的",
+                "iconPath":"/images/my1.png",
+                "selectedIconPath": "/images/my1_s.png"
+            }
+        ]
+    }
 }

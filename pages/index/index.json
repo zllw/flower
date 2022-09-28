@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#C22A1E"
+  "usingComponents": {
+    "l-icon":"/miniprogram_npm/lin-ui/icon"
+  },
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText":"首页"
 }

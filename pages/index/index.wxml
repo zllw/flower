@@ -1,22 +1,26 @@
 <!--pages/index/index.wxml-->
 <view>
-    <swiper class="c-swiper-item-img" indicator-dots="{{true}}" autoplay="{{true}}" indicator-active-color="#C22A1E" vertical="{{false}}" duration="400" interval="1000">
-        <swiper-item wx:for="{{3}}">
-            <image class="c-swiper-item-img" src="/images/avtor.png"></image>
+    <swiper class="c-swiper-item-img" indicator-dots="{{true}}" autoplay="{{true}}" indicator-active-color="black" vertical="{{false}}" duration="1000" interval="3000">
+        <swiper-item wx:for="{{datas}}" wx:for-index="idx" wx:for-item="item">
+            <image class="c-swiper-item-img" src="{{item.data.tags[0].headerImage}}"></image>
         </swiper-item>
     </swiper>
-    <view class="article">
+    <view class="article" style="padding-top: 20rpx;" wx:for="{{datas}}" wx:for-index="idx" wx:for-item="item" >
         <view class="article-avator-date">
-            <image class="article-avator" src="/images/avtor.png"></image>
-            <text class="article-date">2022-09-07 22:00</text>
+            <image class="article-avator" src="{{item.data.author.icon}}"></image>
+            <text style="margin-left: 10rpx;margin-right: 10rpx;font-size: 24rpx;">{{item.data.author.name}}</text>
+            <text class="article-date">{{item.data.date}}</text>
         </view>
-        <text class="article-tittle">关于宇宙无极射线到月球的事件</text>
-        <image class="article-img" src="/images/avtor.png"></image>
-        <text class="article-content">你好微积分大框架的科技阿福卡仕达晶方科技奥德赛科技风科技的快速晶方科技奥德赛风刀霜剑咖啡机跨境电商咖啡机卡加斯咖啡机看电视剧反馈几十块的方法是打发的撒开发金卡戴珊积分卡世纪东方</text>
-        <view>
-            <image class="article-icon" src="/images/点赞.png" />
+        <text class="article-tittle pad txt" style="font-size: 30rpx;">{{item.data.title}}</text>
+        <!-- <image class="article-img " src="/images/avtor.png"></image> -->
+        <video id="{{'myVideo_'+idx}}" src="{{item.data.playUrl}}" style="width: 100vw;"  bindplay="playvideo"	object-fit="fill" enable-play-gesture="{{true}}"></video>
+        <text class="article-content pad txt">{{item.data.description}}</text>
+        <view class="dianzan">           
+            <!-- <image class="article-icon pad" src="/images/点赞.png" /> -->
+            <l-icon name="like" class="article-icon pad" size="40" />
             <text>563</text>
-            <image class="article-icon" src="/images/收藏.png" />
+            <l-icon name="favor" class="article-icon pad" size="40"/>
+            <!-- <image class="article-icon pad" src="/images/收藏.png" /> -->
             <text>165</text>
         </view>
     </view>
